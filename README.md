@@ -10,9 +10,9 @@ Amazonをスクレイピングするコードです。
 
 ## Usage
 ```TERMINAL
-git clone https://github.com/tetsuya-kanamaru/python_scraping.git
-cd C:\\Users\・・・\python_lesson
-python scraping.py
+> git clone https://github.com/tetsuya-kanamaru/python_scraping.git
+> cd C:\\Users\・・・\python_lesson
+> python scraping.py
 ```
 
 
