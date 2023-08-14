@@ -11,8 +11,10 @@ from openpyxl import load_workbook
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Alignment, Border, Side
 
-
+# DataFrame用の配列変数を定義、初期化
 data = []
+
+# 検索対象の商品カテゴリー
 category = "CBD"
 
 # 最初の5ページを取得
