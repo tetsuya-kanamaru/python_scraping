@@ -14,6 +14,3 @@ Amazonをスクレイピングするコードです。
 > cd C:\\Users\・・・\python_lesson
 > python scraping.py
 ```
-
-
-
