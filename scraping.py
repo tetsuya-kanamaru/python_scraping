@@ -1,16 +1,23 @@
+# HTTPライブラリ
 import requests
+# スクレイピングライブラリ
 from bs4 import BeautifulSoup
+# データ解析ライブラリ
 import pandas as pd
+# 時間計測ライブラリ
 import time
+# Excel操作用ライブラリ
 from openpyxl import load_workbook
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Alignment, Border, Side
 
+
 data = []
+category = "CBD"
 
 # 最初の5ページを取得
 for i in range(1, 6):
-    url = f"https://www.amazon.co.jp/s?k=CBD&page={i}"
+    url = f"https://www.amazon.co.jp/s?k={category}&page={i}"
 
     print(f"Accessing page {i}...")
 
@@ -42,8 +49,8 @@ for i in range(1, 6):
             })
 
     # Respectful crawling by sleeping for 1 second before making next request
-    print("Sleeping for 1 second...")
-    time.sleep(1)
+    print("Sleeping for 2 second...")
+    time.sleep(2)
 
 # DataFrameを作成
 df = pd.DataFrame(data)
