@@ -50,7 +50,7 @@ for i in range(1, 6):
                 "レート": rating.text.strip(),
             })
 
-    # Respectful crawling by sleeping for 1 second before making next request
+    # 2秒スリープ
     print("Sleeping for 2 second...")
     time.sleep(2)
 
