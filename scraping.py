@@ -25,6 +25,7 @@ for i in range(1, 6):
 
     # ページの内容を取得
     res = requests.get(url)
+    # ステータスコードが200番台以外だったら例外発生
     res.raise_for_status()
 
     # BeautifulSoupオブジェクトを作成
